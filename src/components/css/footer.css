@@ -1,0 +1,15 @@
+.footer {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    z-index: 5;
+    margin-top: auto;
+  }
+  
+  .custom-icon {
+    z-index: 4;
+  }
+  
+  .custom-icon:hover {
+    opacity: 0.6;
+  }
