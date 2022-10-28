@@ -1,50 +1,63 @@
 import React from 'react';
 import './portfolio.css';
+import Carousel from 'react-bootstrap/Carousel';
 
 export default function Portfolio() {
   return (
-    <div className='portfolio'>
-      <h1>Portfolio Page</h1>
-      interface PageProps {
-    offset: number
-    gradient: string
-    onClick: () => void
-}
+    <Carousel variant="dark">
 
-const Page = ({ offset, gradient, onClick }: PageProps) => (
-  <>
-    <ParallaxLayer offset={offset} speed={0.2} onClick={onClick}>
-      <div className={styles.slopeBegin} />
-    </ParallaxLayer>
+      <Carousel.Item>
+        <img
+          className="d-flex justify-content-center"
+          src="/assets/catered-gamer-png.png"
+          alt="First slide"
+        />
+        <Carousel.Caption>
+          <h5>First slide label</h5>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </Carousel.Caption>
+      </Carousel.Item>
 
-    <ParallaxLayer offset={offset} speed={0.6} onClick={onClick}>
-      <div className={`${styles.slopeEnd} ${styles[gradient]}`} />
-    </ParallaxLayer>
+      <Carousel.Item>
+        <img
+          className="d-flex justify-content-center"
+          src="/assets/Screen Shot 2022-09-28 at 11.26.30 AM.png"
+          alt="Second slide"
+        />
+        <Carousel.Caption>
+          <h5>Second slide label</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </Carousel.Caption>
+      </Carousel.Item>
 
-    <ParallaxLayer className={`${styles.text} ${styles.number}`} offset={offset} speed={0.3}>
-      <span>0{offset + 1}</span>
-    </ParallaxLayer>
-  </>
-)
+      <Carousel.Item>
+        <img
+          className="d-flex justify-content-center"
+          src="/assets/Screen Shot 2022-09-18 at 2.05.08 AM.png"
+          alt="Third slide"
+        />
+        <Carousel.Caption>
+          <h5>Third slide label</h5>
+          <p>
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          </p>
+        </Carousel.Caption>
+      </Carousel.Item>
 
-export default function App() {
-  const parallax = useRef<IParallax>(null)
+      <Carousel.Item>
+        <img
+          className="d-flex justify-content-center"
+          src="/assets/Screen Shot 2022-10-28 at 3.59.11 AM.png"
+          alt="Third slide"
+        />
+        <Carousel.Caption>
+          <h5>Third slide label</h5>
+          <p>
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          </p>
+        </Carousel.Caption>
+      </Carousel.Item>
 
-  const scroll = (to: number) => {
-    if (parallax.current) {
-      parallax.current.scrollTo(to)
-    }
-  }
-  return (
-    <div style={{ background: '#dfdfdf' }}>
-      <Parallax className={styles.container} ref={parallax} pages={3} horizontal>
-        <Page offset={0} gradient="pink" onClick={() => scroll(1)} />
-        <Page offset={1} gradient="teal" onClick={() => scroll(2)} />
-        <Page offset={2} gradient="tomato" onClick={() => scroll(0)} />
-      </Parallax>
-    </div>
-  )
-}
-    </div>
+    </Carousel>
   );
 }
