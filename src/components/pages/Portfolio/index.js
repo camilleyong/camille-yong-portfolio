@@ -91,7 +91,7 @@ export default function Portfolio() {
           <a className="github"
           target="_blank"
           rel="noopener noreferrer"
-          href="https://github.com/cindyung56/resume-creatord">GitHub Link</a>
+          href="https://github.com/cindyung56/resume-creator">GitHub Link</a>
           </p>
         </Carousel.Caption>
       </Carousel.Item>
