@@ -11,7 +11,7 @@ export default function Resume() {
         rel="noopener noreferrer"
         href="https://docs.google.com/document/d/15ABYcEAKT9kVj489mPmzK860twQNhPrYjCHhFey71h0/edit?usp=sharing">here!</a>
         <br></br>
-        I am lookign forward to working with you in the future.
+        I am looking forward to working with you in the future.
       </p>
       <article className="row row-cols-1 row-cols-md-3 justify-content-center">
         <div className="col mb-4">
