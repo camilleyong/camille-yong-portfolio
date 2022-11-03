@@ -71,6 +71,7 @@ SOFTWARE.
 ## Live Link
 
 ## GitHub Link
+https://github.com/camilleyong/camille-yong-portfolio
 
 ## Screenshot
-![Screenshot]()
+![Screenshot](./public/assets/page.png)
