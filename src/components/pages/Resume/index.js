@@ -6,7 +6,10 @@ export default function Resume() {
     <div className='resume'>
       <h1>My Resume</h1>
       <p>
-        Take a look at my resume <a className="resume-link" href="https://docs.google.com/document/d/15ABYcEAKT9kVj489mPmzK860twQNhPrYjCHhFey71h0/edit?usp=sharing">here!</a>
+        Take a look at my resume <a className="resume-link"
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://docs.google.com/document/d/15ABYcEAKT9kVj489mPmzK860twQNhPrYjCHhFey71h0/edit?usp=sharing">here!</a>
         <br></br>
         I am lookign forward to working with you in the future.
       </p>

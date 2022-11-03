@@ -21,7 +21,10 @@ export default function Portfolio() {
         <Carousel.Caption>
           <h5 className='portfolio-title'>Orbital Odyssey Project</h5>
           <p className='para'>
-          <a className="github" href="https://github.com/Proper-Stevo/SpaceInvaders">GitHub Link</a></p>
+          <a className="github"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://github.com/Proper-Stevo/SpaceInvaders">GitHub Link</a></p>
         </Carousel.Caption>
       </Carousel.Item>
 
@@ -39,7 +42,11 @@ export default function Portfolio() {
         <Carousel.Caption>
           <h5 className='portfolio-title'>Note Taker</h5>
           <p className='para'>
-          <a className="github" href="https://github.com/camilleyong/note-taker">GitHub Link</a></p>
+          <a className="github"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://github.com/camilleyong/note-taker">
+          GitHub Link</a></p>
         </Carousel.Caption>
       </Carousel.Item>
 
@@ -58,7 +65,10 @@ export default function Portfolio() {
         <Carousel.Caption>
           <h5 className='portfolio-title'>Weather API</h5>
           <p className='para'>
-          <a className="github" href="https://github.com/camilleyong/weather-dashboard">GitHub Link</a>
+          <a className="github"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://github.com/camilleyong/weather-dashboard">GitHub Link</a>
           </p>
         </Carousel.Caption>
       </Carousel.Item>
@@ -78,7 +88,10 @@ export default function Portfolio() {
         <Carousel.Caption>
           <h5  className='portfolio-title'>Resume Creator</h5>
           <p className='para'>
-          <a className="github" href="https://github.com/cindyung56/resume-creatord">GitHub Link</a>
+          <a className="github"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://github.com/cindyung56/resume-creatord">GitHub Link</a>
           </p>
         </Carousel.Caption>
       </Carousel.Item>
