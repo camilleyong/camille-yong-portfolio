@@ -1,22 +1,101 @@
-import React from 'react';
+import React, {useState} from 'react';
+import './contact.css';
+import Form from 'react-bootstrap/Form';
 
 export default function Contact() {
+  const [email, setEmail] = useState("");
+  const [name, setName] = useState("");
+  const [message, setMessage] = useState("");
+  const [status, setStatus] = useState("");
+
+  const handleInputChange = (event) => {
+    if (event.target.name === "name") {
+      setName(event.target.value);
+    } else if (event.target.name === "email") {
+      setEmail(event.target.value);
+    } else {
+      setMessage(event.target.value);
+    }
+  };
+
+  const handleFormSubmit = (event) => {
+    event.preventDefault();
+
+    // checking to see if all input fields are full 
+    if (email && name && message) {
+      // checking to make sure email is valid 
+      if (checkEmail(email)) {
+        const encodedSubject = "Email From Portfolio"
+        const encodedBody = `${message} - from ${name} ${email}`
+
+
+        // hyper link to open mail client and populate subject and body --- still working on this
+        const link = `mailto:camillemyong@gmail.com?
+        subject=${encodedSubject}&amp;
+        body=${encodedBody}`
+
+        window.location = link;
+
+      } else {
+        setStatus("email is invalid")
+      }
+    } else {
+      setStatus("all input fields need to be filled ")
+    }
+  };
+
+  const checkEmail = (email) => {
+    return email
+      .toLowerCase()
+      .match(
+        /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+      );
+  };
+
   return (
     <div className='contact'>
-      <h1>Contact Page</h1>
-      <p>
-        Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis
-        molestie urna. Aliquam semper ultrices varius. Aliquam faucibus sit amet
-        magna a ultrices. Aenean pellentesque placerat lacus imperdiet
-        efficitur. In felis nisl, luctus non ante euismod, tincidunt bibendum
-        mi. In a molestie nisl, eu sodales diam. Nam tincidunt lacus quis magna
-        posuere, eget tristique dui dapibus. Maecenas fermentum elementum
-        faucibus. Quisque nec metus vestibulum, egestas massa eu, sollicitudin
-        ipsum. Nulla facilisi. Sed ut erat ligula. Nam tincidunt nunc in nibh
-        dictum ullamcorper. Class aptent taciti sociosqu ad litora torquent per
-        conubia nostra, per inceptos himenaeos. Etiam ornare rutrum felis at
-        rhoncus. Etiam vel condimentum magna, quis tempor nulla.
-      </p>
+      <h1 className='contact-title'>Contact Me!</h1>
+      
+      <Form className='form'>
+      <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+        <Form.Label>Name</Form.Label>
+        <Form.Control 
+        value={name}
+        name="name"
+        onChange={handleInputChange}
+        type="text"
+        placeholder="name"
+        class="form-control" />
+      </Form.Group>
+
+      <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+        <Form.Label>Email</Form.Label>
+        <Form.Control 
+         value={email}
+         name="email"
+         onChange={handleInputChange}
+         type="email"
+         placeholder="email"
+         class="form-control"
+         />
+      </Form.Group>
+      
+      <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+        <Form.Label>Message</Form.Label>
+        <Form.Control
+          value={message}
+          name="message"
+          onChange={handleInputChange}
+          as="textarea"
+          type="text"
+          placeholder="message"
+          class="form-control" />
+      </Form.Group>
+      
+      <button onClick={handleFormSubmit} type="button" class="btn btn-light">Submit</button>
+      <p>{status}</p>
+    </Form>
+      
     </div>
   );
 }

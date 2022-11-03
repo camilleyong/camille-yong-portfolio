@@ -4,12 +4,29 @@
     color: white;
     width: 80%;
     position: relative;
-    left: 10%;
     border-radius: 2%;
 }
 
-.d-flex {
-    width: 800x;
-    height: 400px;
-    left: 60%;
+.d-block {
+    height: 650px;
+    justify-content: center;
+}
+
+.portfolio-title {
+    background-color: black;
+    color: white;
+}
+
+.para {
+    background-color: black;
+    margin-top: -10px;
+}
+
+.github {
+    color: white;
+    text-decoration: none;
+}
+
+.github:hover {
+    color: hotpink;
 }

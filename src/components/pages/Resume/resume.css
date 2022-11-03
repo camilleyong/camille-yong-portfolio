@@ -1,0 +1,23 @@
+.resume {
+    background: rgba(255, 255, 255, 0.4);
+    text-align: center;
+    color: white;
+    width: 80%;
+    position: relative;
+    left: 10%;
+    border-radius: 2%;
+    margin-top: 15px;
+}
+
+.resume-link {
+    color: white;
+    text-decoration: none;
+}
+
+.resume-link:hover {
+    color: hotpink;
+}
+
+.card-body {
+    background: rgba(255, 255, 255, 0.256);
+}

@@ -1,24 +1,35 @@
 import React from 'react';
+import './resume.css'
 
 export default function Resume() {
   return (
     <div className='resume'>
-      <h1>Resume Page</h1>
+      <h1>My Resume</h1>
       <p>
-        Donec a volutpat quam. Curabitur nec varius justo, sed rutrum ligula.
-        Curabitur pellentesque turpis sit amet eros iaculis, a mollis arcu
-        dictum. Ut vel ante eget massa ornare placerat. Etiam nisl orci, finibus
-        sodales volutpat et, hendrerit ut dolor. Suspendisse porta dictum nunc,
-        sed pretium risus rutrum eget. Nam consequat, ligula in faucibus
-        vestibulum, nisi justo laoreet risus, luctus luctus mi lacus sit amet
-        libero. Class aptent taciti sociosqu ad litora torquent per conubia
-        nostra, per inceptos himenaeos. Mauris pretium condimentum tellus eget
-        lobortis. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-        Donec placerat accumsan mi, ut congue neque placerat eu. Donec nec ipsum
-        in velit pellentesque vehicula sit amet at augue. Maecenas aliquam
-        bibendum congue. Pellentesque semper, lectus non ullamcorper iaculis,
-        est ligula suscipit velit, sed bibendum turpis dui in sapien.
+        Take a look at my resume <a className="resume-link" href="https://docs.google.com/document/d/15ABYcEAKT9kVj489mPmzK860twQNhPrYjCHhFey71h0/edit?usp=sharing">here!</a>
+        <br></br>
+        I am lookign forward to working with you in the future.
       </p>
+      <article className="row row-cols-1 row-cols-md-3 justify-content-center">
+        <div className="col mb-4">
+            <div className="card-body">
+              <h5 className="card-title">Frontend Skills</h5>
+              <p className="card-text">
+                JavaScript ES6+, HTML5, CSS3, JQuery, Bootstrap, React.js
+              </p>
+            </div>
+        </div>
+
+        <div className="col mb-4">
+            <div className="card-body">
+              <h5 className="card-title">Backend Skills</h5>
+              <p className="card-text">
+                React, Node.js, Express, Sequelize, MySQL, MongoDB, NoSQL,
+                Handlebars
+              </p>
+            </div>
+          </div>
+      </article>
     </div>
   );
 }
