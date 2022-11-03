@@ -9,12 +9,10 @@ creating this project, because it is catered to me and to be employer ready.
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [Credits](#credits)
 - [License](#license)
-- [Deployed Link](#deployed-link)
-- [GitHub Repository](#github-repository)
-- [Preview](#preview)
-- [Questions](#questions)
+- [Deployed Link](#live-link)
+- [GitHub Repository](#github-link)
+- [Preview](#Screenshot)
 
 ## Acceptance Criteria
 
@@ -45,6 +43,9 @@ THEN I see a link to a downloadable resume and a list of the developer’s profi
 WHEN I view the footer
 THEN I am presented with text or icon links to the developer’s GitHub and LinkedIn profiles, and their profile on a third platform (Stack Overflow, Twitter)
 ```
+## Usage
+React and Heroku
+
 ## License 
 MIT License
 
@@ -69,6 +70,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ## Live Link
+https://protected-ridge-63720.herokuapp.com/ 
 
 ## GitHub Link
 https://github.com/camilleyong/camille-yong-portfolio
