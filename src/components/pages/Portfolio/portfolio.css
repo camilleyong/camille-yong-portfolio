@@ -19,7 +19,13 @@
 
 .para {
     background-color: black;
-    margin-top: -10px;
+    margin-top: -16px;
+}
+
+.info {
+    color: white;
+    background-color: black;
+    margin-top: -16px;
 }
 
 .github {
