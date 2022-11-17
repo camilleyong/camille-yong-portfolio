@@ -9,7 +9,7 @@ export default function Resume() {
         Take a look at my resume <a className="resume-link"
         target="_blank"
         rel="noopener noreferrer"
-        href="https://docs.google.com/document/d/15ABYcEAKT9kVj489mPmzK860twQNhPrYjCHhFey71h0/edit?usp=sharing">here!</a>
+        href="https://drive.google.com/file/d/1qD82NIS2sfggC5mFIFgAtKoy6p6tgtuC/view?usp=sharing">here!</a>
         <br></br>
         I am looking forward to working with you in the future.
       </p>
