@@ -55,6 +55,9 @@ export default function Contact() {
   return (
     <div className='contact'>
       <h1 className='contact-title'>Contact Me!</h1>
+      <p className='text-center'>Email: camillemyong@gmail.com</p>
+      <p className="text-center">Set Up A Meeting With Me Below!</p>
+      <p className="text-center"><a href="https://calendly.com/camilleyong/30min" className="calendly"><i class="fa-solid fa-mug-saucer"></i> Calendly</a></p>
       
       <Form className='form'>
       <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">

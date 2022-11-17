@@ -16,3 +16,12 @@
     width: 70%;
     padding-left: 30%;
 }
+
+.calendly {
+    color: white;
+    text-decoration: none;
+}
+
+.calendly:hover {
+    color: black;
+}
